@@ -64,9 +64,13 @@
     <member refid="classShroon_1_1Structure_1_1TreeNode_1aa7c0736e1710bd05a77a45d5685b0526" kind="function"><name>ChildrenCount</name></member>
     <member refid="classShroon_1_1Structure_1_1TreeNode_1a3518ad033b110f2771a127b8e463136e" kind="function"><name>GetChild</name></member>
     <member refid="classShroon_1_1Structure_1_1TreeNode_1a3ba3063214d984b2483a111ea88ac6a6" kind="function"><name>GetChild</name></member>
+    <member refid="classShroon_1_1Structure_1_1TreeNode_1a59ea375f96aca4e25d57a3821de7f2e1" kind="function"><name>AddChild</name></member>
+    <member refid="classShroon_1_1Structure_1_1TreeNode_1a73b9789856e7ed3fc1e56044e880a9af" kind="function"><name>AddChild</name></member>
     <member refid="classShroon_1_1Structure_1_1TreeNode_1a76642ffa3cb42edc5bc1caa1f5d543e4" kind="function"><name>AddChild</name></member>
     <member refid="classShroon_1_1Structure_1_1TreeNode_1aa0bf4b7c6b484faee303b2e2e8cc8ce3" kind="function"><name>AddChild</name></member>
     <member refid="classShroon_1_1Structure_1_1TreeNode_1ac06b3c8d101adf2e6bc93ba2804bf4ac" kind="function"><name>AddChild</name></member>
+    <member refid="classShroon_1_1Structure_1_1TreeNode_1aa6ed04d7efc2ae2f77bdf0c8ccb59f78" kind="function"><name>AddSibling</name></member>
+    <member refid="classShroon_1_1Structure_1_1TreeNode_1a415e841f393f7d146363fa52067b01fc" kind="function"><name>AddSibling</name></member>
     <member refid="classShroon_1_1Structure_1_1TreeNode_1a5025e54016e0ee4dfd67d14ecd1c08e5" kind="function"><name>AddSibling</name></member>
     <member refid="classShroon_1_1Structure_1_1TreeNode_1aecc70e898292978774a56bad490342f9" kind="function"><name>AddSibling</name></member>
     <member refid="classShroon_1_1Structure_1_1TreeNode_1af893dbbe11bc2c8846a5ad1aa55e24ab" kind="function"><name>AddSibling</name></member>

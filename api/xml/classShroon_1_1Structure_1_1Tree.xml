@@ -20,7 +20,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/Tree.hpp" line="507" column="22" bodyfile="src/Tree.hpp" bodystart="507" bodyend="-1"/>
+        <location file="src/Tree.hpp" line="584" column="22" bodyfile="src/Tree.hpp" bodystart="584" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -50,7 +50,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/Tree.hpp" line="321" column="13" bodyfile="src/Tree.hpp" bodystart="321" bodyend="324"/>
+        <location file="src/Tree.hpp" line="398" column="13" bodyfile="src/Tree.hpp" bodystart="398" bodyend="401"/>
       </memberdef>
       <memberdef kind="function" id="classShroon_1_1Structure_1_1Tree_1a601f47675ab5f8b17155114d5e3b157f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -78,7 +78,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/Tree.hpp" line="331" column="13" bodyfile="src/Tree.hpp" bodystart="331" bodyend="334"/>
+        <location file="src/Tree.hpp" line="408" column="13" bodyfile="src/Tree.hpp" bodystart="408" bodyend="411"/>
       </memberdef>
       <memberdef kind="function" id="classShroon_1_1Structure_1_1Tree_1adb6811125ea81e34ab4c12e1d3667619" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
@@ -122,7 +122,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/Tree.hpp" line="345" column="13" bodyfile="src/Tree.hpp" bodystart="345" bodyend="348"/>
+        <location file="src/Tree.hpp" line="422" column="13" bodyfile="src/Tree.hpp" bodystart="422" bodyend="425"/>
       </memberdef>
       <memberdef kind="function" id="classShroon_1_1Structure_1_1Tree_1a4f0770b006efdea18feadf87bc4c8f3d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classShroon_1_1Structure_1_1TreeNode" kindref="compound">TreeNode</ref>&lt; ValueType &gt; &amp;</type>
@@ -139,7 +139,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/Tree.hpp" line="355" column="30" bodyfile="src/Tree.hpp" bodystart="355" bodyend="358"/>
+        <location file="src/Tree.hpp" line="432" column="30" bodyfile="src/Tree.hpp" bodystart="432" bodyend="435"/>
       </memberdef>
       <memberdef kind="function" id="classShroon_1_1Structure_1_1Tree_1afe28526eec08b82d0b5b3d110d62ed0a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>const <ref refid="classShroon_1_1Structure_1_1TreeNode" kindref="compound">TreeNode</ref>&lt; ValueType &gt; &amp;</type>
@@ -156,7 +156,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/Tree.hpp" line="365" column="36" bodyfile="src/Tree.hpp" bodystart="365" bodyend="368"/>
+        <location file="src/Tree.hpp" line="442" column="36" bodyfile="src/Tree.hpp" bodystart="442" bodyend="445"/>
       </memberdef>
       <memberdef kind="function" id="classShroon_1_1Structure_1_1Tree_1a064dc1890f9d14c960f359ed65c035ab" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>std::vector&lt; <ref refid="classShroon_1_1Structure_1_1TreeNode" kindref="compound">TreeNode</ref>&lt; ValueType &gt; * &gt;</type>
@@ -203,7 +203,7 @@ Example - In the following tree:</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/Tree.hpp" line="402" column="25" bodyfile="src/Tree.hpp" bodystart="402" bodyend="436"/>
+        <location file="src/Tree.hpp" line="479" column="25" bodyfile="src/Tree.hpp" bodystart="479" bodyend="513"/>
       </memberdef>
       <memberdef kind="function" id="classShroon_1_1Structure_1_1Tree_1aea0672a9d5120f14aac206ab97e9e082" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>std::vector&lt; const <ref refid="classShroon_1_1Structure_1_1TreeNode" kindref="compound">TreeNode</ref>&lt; ValueType &gt; * &gt;</type>
@@ -250,7 +250,7 @@ Example - In the following tree:</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/Tree.hpp" line="470" column="25" bodyfile="src/Tree.hpp" bodystart="470" bodyend="504"/>
+        <location file="src/Tree.hpp" line="547" column="25" bodyfile="src/Tree.hpp" bodystart="547" bodyend="581"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -274,7 +274,7 @@ Example - In the following tree:</para>
         <link refid="classShroon_1_1Structure_1_1Tree"/>
       </node>
     </collaborationgraph>
-    <location file="src/Tree.hpp" line="314" column="1" bodyfile="src/Tree.hpp" bodystart="313" bodyend="508"/>
+    <location file="src/Tree.hpp" line="391" column="1" bodyfile="src/Tree.hpp" bodystart="390" bodyend="585"/>
     <listofallmembers>
       <member refid="classShroon_1_1Structure_1_1Tree_1a064dc1890f9d14c960f359ed65c035ab" prot="public" virt="non-virtual"><scope>Shroon::Structure::Tree</scope><name>GetNodesAtHeight</name></member>
       <member refid="classShroon_1_1Structure_1_1Tree_1aea0672a9d5120f14aac206ab97e9e082" prot="public" virt="non-virtual"><scope>Shroon::Structure::Tree</scope><name>GetNodesAtHeight</name></member>

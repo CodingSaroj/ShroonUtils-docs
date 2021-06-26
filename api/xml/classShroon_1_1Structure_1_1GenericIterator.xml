@@ -23,7 +23,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/GenericIterator.hpp" line="208" column="28" bodyfile="src/GenericIterator.hpp" bodystart="208" bodyend="-1"/>
+        <location file="src/GenericIterator.hpp" line="223" column="28" bodyfile="src/GenericIterator.hpp" bodystart="223" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classShroon_1_1Structure_1_1GenericIterator_1a5727f92168f952dc8a4c6f267fa0a6cf" prot="private" static="no" mutable="no">
         <type>size_t</type>
@@ -36,7 +36,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/GenericIterator.hpp" line="209" column="20" bodyfile="src/GenericIterator.hpp" bodystart="209" bodyend="-1"/>
+        <location file="src/GenericIterator.hpp" line="224" column="20" bodyfile="src/GenericIterator.hpp" bodystart="224" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classShroon_1_1Structure_1_1GenericIterator_1ab42e73438bfd8d78b643e3f5634c3375" prot="private" static="no" mutable="no">
         <type>bool</type>
@@ -49,7 +49,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/GenericIterator.hpp" line="210" column="18" bodyfile="src/GenericIterator.hpp" bodystart="210" bodyend="-1"/>
+        <location file="src/GenericIterator.hpp" line="225" column="18" bodyfile="src/GenericIterator.hpp" bodystart="225" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classShroon_1_1Structure_1_1GenericIterator_1a248357a7de7eaa377fee97a4feff0f2d" prot="private" static="no" mutable="no">
         <type>friend</type>
@@ -62,7 +62,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/GenericIterator.hpp" line="218" column="20" bodyfile="src/GenericIterator.hpp" bodystart="218" bodyend="-1"/>
+        <location file="src/GenericIterator.hpp" line="233" column="20" bodyfile="src/GenericIterator.hpp" bodystart="233" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -81,7 +81,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/GenericIterator.hpp" line="61" column="25" bodyfile="src/GenericIterator.hpp" bodystart="61" bodyend="64"/>
+        <location file="src/GenericIterator.hpp" line="76" column="25" bodyfile="src/GenericIterator.hpp" bodystart="76" bodyend="79"/>
       </memberdef>
       <memberdef kind="function" id="classShroon_1_1Structure_1_1GenericIterator_1a2f6d50b871f0e110400c0a94e5de8dd2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>ValueType &amp;</type>
@@ -98,7 +98,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/GenericIterator.hpp" line="72" column="31" bodyfile="src/GenericIterator.hpp" bodystart="72" bodyend="80"/>
+        <location file="src/GenericIterator.hpp" line="87" column="31" bodyfile="src/GenericIterator.hpp" bodystart="87" bodyend="95"/>
       </memberdef>
       <memberdef kind="function" id="classShroon_1_1Structure_1_1GenericIterator_1ab3e032bec0b902752176623c632eb2d4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -115,7 +115,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/GenericIterator.hpp" line="88" column="20" bodyfile="src/GenericIterator.hpp" bodystart="88" bodyend="91"/>
+        <location file="src/GenericIterator.hpp" line="103" column="20" bodyfile="src/GenericIterator.hpp" bodystart="103" bodyend="106"/>
       </memberdef>
       <memberdef kind="function" id="classShroon_1_1Structure_1_1GenericIterator_1a86b5145095cf89df574dd0c721cd932c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>ValueType &amp;</type>
@@ -132,7 +132,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/GenericIterator.hpp" line="98" column="31" bodyfile="src/GenericIterator.hpp" bodystart="98" bodyend="101"/>
+        <location file="src/GenericIterator.hpp" line="113" column="31" bodyfile="src/GenericIterator.hpp" bodystart="113" bodyend="116"/>
       </memberdef>
       <memberdef kind="function" id="classShroon_1_1Structure_1_1GenericIterator_1a848826b2fd4cb9ceb930f99cc5e7d17d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classShroon_1_1Structure_1_1GenericIterator" kindref="compound">GenericIterator</ref>&lt; ValueType, StructureType &gt;</type>
@@ -152,7 +152,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/GenericIterator.hpp" line="108" column="36" bodyfile="src/GenericIterator.hpp" bodystart="108" bodyend="114"/>
+        <location file="src/GenericIterator.hpp" line="123" column="36" bodyfile="src/GenericIterator.hpp" bodystart="123" bodyend="129"/>
       </memberdef>
       <memberdef kind="function" id="classShroon_1_1Structure_1_1GenericIterator_1a805f8b872d7a01d40221df3aafa21b71" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classShroon_1_1Structure_1_1GenericIterator" kindref="compound">GenericIterator</ref>&lt; ValueType, StructureType &gt;</type>
@@ -172,7 +172,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/GenericIterator.hpp" line="121" column="36" bodyfile="src/GenericIterator.hpp" bodystart="121" bodyend="127"/>
+        <location file="src/GenericIterator.hpp" line="136" column="36" bodyfile="src/GenericIterator.hpp" bodystart="136" bodyend="142"/>
       </memberdef>
       <memberdef kind="function" id="classShroon_1_1Structure_1_1GenericIterator_1aa367254c92b791fb2c19cb5ede053aad" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -186,7 +186,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/GenericIterator.hpp" line="132" column="25" bodyfile="src/GenericIterator.hpp" bodystart="132" bodyend="135"/>
+        <location file="src/GenericIterator.hpp" line="147" column="25" bodyfile="src/GenericIterator.hpp" bodystart="147" bodyend="150"/>
       </memberdef>
       <memberdef kind="function" id="classShroon_1_1Structure_1_1GenericIterator_1a728a61e851c4e0db4342bdb47ea574a2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -200,7 +200,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/GenericIterator.hpp" line="140" column="25" bodyfile="src/GenericIterator.hpp" bodystart="140" bodyend="143"/>
+        <location file="src/GenericIterator.hpp" line="155" column="25" bodyfile="src/GenericIterator.hpp" bodystart="155" bodyend="158"/>
       </memberdef>
       <memberdef kind="function" id="classShroon_1_1Structure_1_1GenericIterator_1a0fcdb1087c2b3c67743cd3895605c2e1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classShroon_1_1Structure_1_1GenericIterator" kindref="compound">GenericIterator</ref>&lt; ValueType, StructureType &gt;</type>
@@ -230,7 +230,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/GenericIterator.hpp" line="153" column="36" bodyfile="src/GenericIterator.hpp" bodystart="153" bodyend="159"/>
+        <location file="src/GenericIterator.hpp" line="168" column="36" bodyfile="src/GenericIterator.hpp" bodystart="168" bodyend="174"/>
       </memberdef>
       <memberdef kind="function" id="classShroon_1_1Structure_1_1GenericIterator_1aa04f60654557edd18c1b34ebf84c9dfd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classShroon_1_1Structure_1_1GenericIterator" kindref="compound">GenericIterator</ref>&lt; ValueType, StructureType &gt;</type>
@@ -260,7 +260,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/GenericIterator.hpp" line="169" column="36" bodyfile="src/GenericIterator.hpp" bodystart="169" bodyend="175"/>
+        <location file="src/GenericIterator.hpp" line="184" column="36" bodyfile="src/GenericIterator.hpp" bodystart="184" bodyend="190"/>
       </memberdef>
       <memberdef kind="function" id="classShroon_1_1Structure_1_1GenericIterator_1acb4676e9441ce45d5c66fcfd4db8ea3c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classShroon_1_1Structure_1_1GenericIterator" kindref="compound">GenericIterator</ref>&lt; ValueType, StructureType &gt;</type>
@@ -290,7 +290,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/GenericIterator.hpp" line="185" column="36" bodyfile="src/GenericIterator.hpp" bodystart="185" bodyend="190"/>
+        <location file="src/GenericIterator.hpp" line="200" column="36" bodyfile="src/GenericIterator.hpp" bodystart="200" bodyend="205"/>
       </memberdef>
       <memberdef kind="function" id="classShroon_1_1Structure_1_1GenericIterator_1a2dab8d0548ccab168ced1621be2ba487" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classShroon_1_1Structure_1_1GenericIterator" kindref="compound">GenericIterator</ref>&lt; ValueType, StructureType &gt;</type>
@@ -320,7 +320,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/GenericIterator.hpp" line="200" column="36" bodyfile="src/GenericIterator.hpp" bodystart="200" bodyend="205"/>
+        <location file="src/GenericIterator.hpp" line="215" column="36" bodyfile="src/GenericIterator.hpp" bodystart="215" bodyend="220"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -343,7 +343,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/GenericIterator.hpp" line="212" column="13" bodyfile="src/GenericIterator.hpp" bodystart="212" bodyend="216"/>
+        <location file="src/GenericIterator.hpp" line="227" column="13" bodyfile="src/GenericIterator.hpp" bodystart="227" bodyend="231"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -383,7 +383,7 @@ A data structure which needs to be iterated by this iterator needs to follow the
         <link refid="classShroon_1_1Structure_1_1GenericIterator"/>
       </node>
     </collaborationgraph>
-    <location file="src/GenericIterator.hpp" line="53" column="1" bodyfile="src/GenericIterator.hpp" bodystart="52" bodyend="219"/>
+    <location file="src/GenericIterator.hpp" line="68" column="1" bodyfile="src/GenericIterator.hpp" bodystart="67" bodyend="234"/>
     <listofallmembers>
       <member refid="classShroon_1_1Structure_1_1GenericIterator_1a2f6d50b871f0e110400c0a94e5de8dd2" prot="public" virt="non-virtual"><scope>Shroon::Structure::GenericIterator</scope><name>Base</name></member>
       <member refid="classShroon_1_1Structure_1_1GenericIterator_1a4ba396ab20bc350004ec2d041df9c3ed" prot="private" virt="non-virtual"><scope>Shroon::Structure::GenericIterator</scope><name>GenericIterator</name></member>
