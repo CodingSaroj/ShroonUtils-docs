@@ -1,0 +1,4 @@
+HashUtils
+=========
+
+.. doxygengroup:: HashUtils

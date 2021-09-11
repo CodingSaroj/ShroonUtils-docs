@@ -1,67 +1,40 @@
 GettingStarted
 ==============
 
-This library requires C++17 or above.
+This is a header-only library, so no building is required.
 
-**Note**: `CMake 3.14+ <https://cmake.org>`_ is required for operations that require CMake.
+Although, you do need to add the following code before including the library headers in **one** of
+your source files:
 
-CMake-based projects
--------------------------
+.. code:: c
 
-To use this library, add the following to your CMakeLists.txt:
+    #define SUTL_IMPLEMENTATION
 
-.. code:: cmake
-
-    set(ShroonStructure_DIR "<path to the root of library>/cmake/")
-    find_package(ShroonStructure 0.1 REQUIRED)
-
-    # ...
-
-    # Adding the include directories
-    target_include_directories(YourTarget [PUBLIC|PRIVATE|INTERFACE] SHRN_STRUCTURE_INCLUDE_DIRS)
-
-Non-CMake projects
------------------------
-
-Since this is a header only library, just add ``include/`` in the project root to your compiler
-include directories.
-
-Including the library
----------------------
-
-If you are not defining your own error reporter function then you need to add the following lines
-before including the library:
-
-.. code:: c++
-
-    #define SHRN_STRUCTURE_DEFAULT_ERROR_REPORTER 1
-
-See `Error Reporter <ErrorReporter.html>`_ for more info on what this does.
-
-There are two ways to include the library:
-
-1. Include required data structures individually.
-2. Include ``Shroon/Structure/Structures.hpp`` which includes all the data structures in the library.
-
-Building the examples
----------------------
-
-Configuration
+Error Handler
 -------------
 
-Use the following commands in command prompt or terminal in the project root to configure the examples:
+By default, all the errors are written to ``stderr``.
 
-.. code::
+But if you want to use a custom handler then add the following code before including the library
+headers in the same source file where ``SUTL_IMPLEMENTATION`` is defined:
 
-    mkdir build && cd build
-    cmake .. -G "<Name of generator>" -DSHRN_STRUCTURE_BUILD_EXAMPLES=ON
+.. code:: c
 
-Building
---------
+    #define SUTL_ERROR_HANDLER_CUSTOM 1
 
-Build the example using the files for your chosen `CMake Generator <https://cmake.org/>`_.
+Then you need to add the following code to initialize the error handler:
 
-Running
--------
+.. code:: c
 
-The examples are stored in ``build/bin/example/`` from project root.
+    void ( * SUTLErrorHandler)(const char *) = MyErrorHandlerFn;
+
+Replace ``MyErrorHandlerFn`` with your custom error handler function.
+
+An example of an error handler function is (this is also the default implementation):
+
+.. code:: c
+    
+    void MyErrorHandlerFn(const char * msg)
+    {
+        fprintf(stderr, "%s\n", msg);
+    }

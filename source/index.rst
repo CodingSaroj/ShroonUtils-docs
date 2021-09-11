@@ -1,11 +1,9 @@
-Welcome to Shroon Structure's documentation!
+Welcome to Shroon Utils documentation!
 ============================================
 
-Shroon Structure is a header-only library written in C++17 which is a collection of data structures.
+Shroon Utils is a header-only library written in C89 for which contains useful constructs for
+libraries written in C.
 
 .. toctree::
     GettingStarted.rst
-    DataStructures.rst
-    GenericIterator.rst
-    ErrorReporter.rst
     APIReference.rst

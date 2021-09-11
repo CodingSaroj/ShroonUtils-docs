@@ -2,6 +2,8 @@ API Reference
 =============
 
 .. toctree::
-    DataStructuresAPI.rst
-    OutputStreamOperators.rst
-    ErrorReporting.rst
+    HashUtils.rst
+    Vector.rst
+    String.rst
+    Hashmap.rst
+    Hashset.rst

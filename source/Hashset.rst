@@ -1,0 +1,4 @@
+Hashset
+=======
+
+.. doxygengroup:: Hashset

@@ -17,12 +17,12 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'Shroon Structure'
+project = 'Shroon Utils'
 copyright = '2021, Saroj Kumar'
 author = 'Saroj Kumar'
 
 # The full version, including alpha/beta/rc tags
-release = '2021'
+release = '0.1'
 
 
 # -- General configuration ---------------------------------------------------
@@ -31,15 +31,15 @@ release = '2021'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-        'breathe',
-        'sphinx_rtd_theme'
+    'breathe',
+    'sphinx_rtd_theme'
 ]
 
 breathe_projects = {
-        'Shroon Structure': '../api/xml/'
+    'Shroon Utils': '../api/xml/'
 }
 
-breathe_default_project = 'Shroon Structure'
+breathe_default_project = 'Shroon Utils'
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -57,7 +57,7 @@ exclude_patterns = []
 #
 html_theme = 'sphinx_rtd_theme'
 html_theme_options = {
-        'logo_only': False
+    'logo_only': False
 }
 
 html_logo = '../logos/ShroonStructure256x256.png'
