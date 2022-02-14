@@ -18,7 +18,7 @@
 # -- Project information -----------------------------------------------------
 
 project = 'Shroon Utils'
-copyright = '2021, Saroj Kumar'
+copyright = '2022, Saroj Kumar'
 author = 'Saroj Kumar'
 
 # The full version, including alpha/beta/rc tags
@@ -59,8 +59,6 @@ html_theme = 'sphinx_rtd_theme'
 html_theme_options = {
     'logo_only': False
 }
-
-html_logo = '../logos/ShroonStructure256x256.png'
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,

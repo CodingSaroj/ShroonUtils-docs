@@ -830,7 +830,7 @@
 <codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
 <codeline lineno="262"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>Resize<sp/>the<sp/>memory<sp/>of<sp/>vector<sp/>(including<sp/>the<sp/>internal<sp/>variables)<sp/>to<sp/>the<sp/>`requiredSize`.</highlight></codeline>
 <codeline lineno="263"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*v<sp/>=<sp/><ref refid="Common_8h_1a767f8b1c61fe2f764635d060bd206fad" kindref="member">SHRN_REALLOC</ref>((</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>*)*v<sp/>-<sp/>3,<sp/>requiredSize);</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*v<sp/>=<sp/><ref refid="Common_8h_1a419b2893cf0f7a8a556283c4b049942c" kindref="member">SHRN_REALLOC</ref>((</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>*)*v<sp/>-<sp/>3,<sp/>requiredSize);</highlight></codeline>
 <codeline lineno="265"><highlight class="normal"></highlight></codeline>
 <codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!*v)</highlight></codeline>
 <codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>

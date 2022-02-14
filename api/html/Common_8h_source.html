@@ -105,9 +105,9 @@ $(function() {
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#else</span></div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">    #include &lt;stdlib.h&gt;</span></div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="Common_8h.html#a33576da5507268ffc7a5ba094678cdb6">   48</a></span>&#160;<span class="preprocessor">    #define SHRN_MALLOC(size)       malloc(size)</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="Common_8h.html#a767f8b1c61fe2f764635d060bd206fad">   49</a></span>&#160;<span class="preprocessor">    #define SHRN_REALLOC(old, size) realloc(old, size)</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="Common_8h.html#a1ef8ab546b7c0782add31a64662a9c87">   50</a></span>&#160;<span class="preprocessor">    #define SHRN_FREE(ptr)          free(ptr)</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="Common_8h.html#a33576da5507268ffc7a5ba094678cdb6">   48</a></span>&#160;<span class="preprocessor">    #define SHRN_MALLOC(size)           malloc(size)</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="Common_8h.html#a419b2893cf0f7a8a556283c4b049942c">   49</a></span>&#160;<span class="preprocessor">    #define SHRN_REALLOC(oldptr, size)  realloc(oldptr, size)</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="Common_8h.html#a1ef8ab546b7c0782add31a64662a9c87">   50</a></span>&#160;<span class="preprocessor">    #define SHRN_FREE(ptr)              free(ptr)</span></div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#ifdef SHRN_NO_USE_STRING_H</span></div>
@@ -204,37 +204,39 @@ $(function() {
 <div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;<span class="preprocessor">        #ifdef SUTL_IMPLEMENTATION</span></div>
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;            <span class="keywordtype">int</span> SUTL_InternalStrcmp(<span class="keyword">const</span> <span class="keywordtype">char</span> * str0, <span class="keyword">const</span> <span class="keywordtype">char</span> * str1)</div>
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;            {</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;                <span class="keywordtype">size_t</span> len = <a class="code" href="Common_8h.html#a4a42ee0d16198c655ab6bcfb02831c8b">SHRN_STRLEN</a>(str0);</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;                <span class="keywordtype">size_t</span> len1 = <a class="code" href="Common_8h.html#a4a42ee0d16198c655ab6bcfb02831c8b">SHRN_STRLEN</a>(str1);</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160; </div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;                len = len1 &lt; len ? len1 : len;</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;                </div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;                <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; len; i++)</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;                    <span class="keywordflow">if</span> (str0[i] != str1[i])</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;                        <span class="keywordflow">return</span> str0[i] - str1[i];</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160; </div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;                <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;            }</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;<span class="preprocessor">        #endif</span></div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        </div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;<span class="preprocessor">        #define SHRN_STRCMP(str0, str1) SUTL_InternalStrcmp(str0, str1)</span></div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;<span class="preprocessor">    #endif</span></div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;<span class="preprocessor">    #include &lt;string.h&gt;</span></div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160; </div>
-<div class="line"><a name="l00165"></a><span class="lineno"><a class="line" href="Common_8h.html#ae98701da6883fb9a22e5c13a1bf87cfb">  165</a></span>&#160;<span class="preprocessor">    #define SHRN_MEMCPY(dst, src, size) memcpy(dst, src, size)</span></div>
-<div class="line"><a name="l00166"></a><span class="lineno"><a class="line" href="Common_8h.html#a4ce05443b27a360cf8f168b7d720570a">  166</a></span>&#160;<span class="preprocessor">    #define SHRN_MEMMOVE(dst, src, size) memmove(dst, src, size)</span></div>
-<div class="line"><a name="l00167"></a><span class="lineno"><a class="line" href="Common_8h.html#a5c367cdceb0b1a52f2208e78a1f4efa2">  167</a></span>&#160;<span class="preprocessor">    #define SHRN_MEMSET(ptr, val, size) memset(ptr, val, size)</span></div>
-<div class="line"><a name="l00168"></a><span class="lineno"><a class="line" href="Common_8h.html#a4a42ee0d16198c655ab6bcfb02831c8b">  168</a></span>&#160;<span class="preprocessor">    #define SHRN_STRLEN(str) strlen(str)</span></div>
-<div class="line"><a name="l00169"></a><span class="lineno"><a class="line" href="Common_8h.html#a4601d651258a55222c8eceec39bc8199">  169</a></span>&#160;<span class="preprocessor">    #define SHRN_STRCMP(str0, str1) strcmp(str0, str1)</span></div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160; </div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="ErrorHandler_8h.html">ErrorHandler.h</a>&quot;</span></div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;                <span class="keywordtype">size_t</span> i = 0;</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160; </div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;                <span class="keywordtype">size_t</span> len = <a class="code" href="Common_8h.html#a4a42ee0d16198c655ab6bcfb02831c8b">SHRN_STRLEN</a>(str0);</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;                <span class="keywordtype">size_t</span> len1 = <a class="code" href="Common_8h.html#a4a42ee0d16198c655ab6bcfb02831c8b">SHRN_STRLEN</a>(str1);</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160; </div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;                len = len1 &lt; len ? len1 : len;</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;                </div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;                <span class="keywordflow">for</span> (i = 0; i &lt; len; i++)</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;                    <span class="keywordflow">if</span> (str0[i] != str1[i])</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;                        <span class="keywordflow">return</span> str0[i] - str1[i];</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160; </div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;                <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;            }</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;<span class="preprocessor">        #endif</span></div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        </div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;<span class="preprocessor">        #define SHRN_STRCMP(str0, str1) SUTL_InternalStrcmp(str0, str1)</span></div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;<span class="preprocessor">    #endif</span></div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;<span class="preprocessor">    #include &lt;string.h&gt;</span></div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160; </div>
+<div class="line"><a name="l00167"></a><span class="lineno"><a class="line" href="Common_8h.html#ae98701da6883fb9a22e5c13a1bf87cfb">  167</a></span>&#160;<span class="preprocessor">    #define SHRN_MEMCPY(dst, src, size)     memcpy(dst, src, size)</span></div>
+<div class="line"><a name="l00168"></a><span class="lineno"><a class="line" href="Common_8h.html#a4ce05443b27a360cf8f168b7d720570a">  168</a></span>&#160;<span class="preprocessor">    #define SHRN_MEMMOVE(dst, src, size)    memmove(dst, src, size)</span></div>
+<div class="line"><a name="l00169"></a><span class="lineno"><a class="line" href="Common_8h.html#a5c367cdceb0b1a52f2208e78a1f4efa2">  169</a></span>&#160;<span class="preprocessor">    #define SHRN_MEMSET(ptr, val, size)     memset(ptr, val, size)</span></div>
+<div class="line"><a name="l00170"></a><span class="lineno"><a class="line" href="Common_8h.html#a4a42ee0d16198c655ab6bcfb02831c8b">  170</a></span>&#160;<span class="preprocessor">    #define SHRN_STRLEN(str)                strlen(str)</span></div>
+<div class="line"><a name="l00171"></a><span class="lineno"><a class="line" href="Common_8h.html#a4601d651258a55222c8eceec39bc8199">  171</a></span>&#160;<span class="preprocessor">    #define SHRN_STRCMP(str0, str1)         strcmp(str0, str1)</span></div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160; </div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="ErrorHandler_8h.html">ErrorHandler.h</a>&quot;</span></div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160; </div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aErrorHandler_8h_html"><div class="ttname"><a href="ErrorHandler_8h.html">ErrorHandler.h</a></div></div>
-<div class="ttc" id="aCommon_8h_html_a4a42ee0d16198c655ab6bcfb02831c8b"><div class="ttname"><a href="Common_8h.html#a4a42ee0d16198c655ab6bcfb02831c8b">SHRN_STRLEN</a></div><div class="ttdeci">#define SHRN_STRLEN(str)</div><div class="ttdef"><b>Definition:</b> Common.h:168</div></div>
+<div class="ttc" id="aCommon_8h_html_a4a42ee0d16198c655ab6bcfb02831c8b"><div class="ttname"><a href="Common_8h.html#a4a42ee0d16198c655ab6bcfb02831c8b">SHRN_STRLEN</a></div><div class="ttdeci">#define SHRN_STRLEN(str)</div><div class="ttdef"><b>Definition:</b> Common.h:170</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

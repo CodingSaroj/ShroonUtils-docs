@@ -101,11 +101,11 @@
         </inbodydescription>
         <location file="include/Shroon/Utils/Common.h" line="48" column="13" bodyfile="include/Shroon/Utils/Common.h" bodystart="48" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="define" id="Common_8h_1a767f8b1c61fe2f764635d060bd206fad" prot="public" static="no">
+      <memberdef kind="define" id="Common_8h_1a419b2893cf0f7a8a556283c4b049942c" prot="public" static="no">
         <name>SHRN_REALLOC</name>
-        <param><defname>old</defname></param>
+        <param><defname>oldptr</defname></param>
         <param><defname>size</defname></param>
-        <initializer>realloc(old, size)</initializer>
+        <initializer>realloc(oldptr, size)</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -138,7 +138,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/Shroon/Utils/Common.h" line="165" column="13" bodyfile="include/Shroon/Utils/Common.h" bodystart="165" bodyend="-1"/>
+        <location file="include/Shroon/Utils/Common.h" line="167" column="13" bodyfile="include/Shroon/Utils/Common.h" bodystart="167" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="Common_8h_1a4ce05443b27a360cf8f168b7d720570a" prot="public" static="no">
         <name>SHRN_MEMMOVE</name>
@@ -152,7 +152,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/Shroon/Utils/Common.h" line="166" column="13" bodyfile="include/Shroon/Utils/Common.h" bodystart="166" bodyend="-1"/>
+        <location file="include/Shroon/Utils/Common.h" line="168" column="13" bodyfile="include/Shroon/Utils/Common.h" bodystart="168" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="Common_8h_1a5c367cdceb0b1a52f2208e78a1f4efa2" prot="public" static="no">
         <name>SHRN_MEMSET</name>
@@ -166,7 +166,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/Shroon/Utils/Common.h" line="167" column="13" bodyfile="include/Shroon/Utils/Common.h" bodystart="167" bodyend="-1"/>
+        <location file="include/Shroon/Utils/Common.h" line="169" column="13" bodyfile="include/Shroon/Utils/Common.h" bodystart="169" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="Common_8h_1a4a42ee0d16198c655ab6bcfb02831c8b" prot="public" static="no">
         <name>SHRN_STRLEN</name>
@@ -178,7 +178,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/Shroon/Utils/Common.h" line="168" column="13" bodyfile="include/Shroon/Utils/Common.h" bodystart="168" bodyend="-1"/>
+        <location file="include/Shroon/Utils/Common.h" line="170" column="13" bodyfile="include/Shroon/Utils/Common.h" bodystart="170" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="Common_8h_1a4601d651258a55222c8eceec39bc8199" prot="public" static="no">
         <name>SHRN_STRCMP</name>
@@ -191,7 +191,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/Shroon/Utils/Common.h" line="169" column="13" bodyfile="include/Shroon/Utils/Common.h" bodystart="169" bodyend="-1"/>
+        <location file="include/Shroon/Utils/Common.h" line="171" column="13" bodyfile="include/Shroon/Utils/Common.h" bodystart="171" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -238,9 +238,9 @@
 <codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="46"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="47"><highlight class="normal"></highlight></codeline>
-<codeline lineno="48" refid="Common_8h_1a33576da5507268ffc7a5ba094678cdb6" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>SHRN_MALLOC(size)<sp/><sp/><sp/><sp/><sp/><sp/><sp/>malloc(size)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="49" refid="Common_8h_1a767f8b1c61fe2f764635d060bd206fad" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>SHRN_REALLOC(old,<sp/>size)<sp/>realloc(old,<sp/>size)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="50" refid="Common_8h_1a1ef8ab546b7c0782add31a64662a9c87" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>SHRN_FREE(ptr)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>free(ptr)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="Common_8h_1a33576da5507268ffc7a5ba094678cdb6" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>SHRN_MALLOC(size)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>malloc(size)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="Common_8h_1a419b2893cf0f7a8a556283c4b049942c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>SHRN_REALLOC(oldptr,<sp/>size)<sp/><sp/>realloc(oldptr,<sp/>size)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="Common_8h_1a1ef8ab546b7c0782add31a64662a9c87" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>SHRN_FREE(ptr)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>free(ptr)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="51"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="52"><highlight class="normal"></highlight></codeline>
 <codeline lineno="53"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>SHRN_NO_USE_STRING_H</highlight><highlight class="normal"></highlight></codeline>
@@ -337,34 +337,36 @@
 <codeline lineno="144"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#ifdef<sp/>SUTL_IMPLEMENTATION</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>SUTL_InternalStrcmp(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>str0,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>str1)</highlight></codeline>
 <codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len<sp/>=<sp/><ref refid="Common_8h_1a4a42ee0d16198c655ab6bcfb02831c8b" kindref="member">SHRN_STRLEN</ref>(str0);</highlight></codeline>
-<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len1<sp/>=<sp/><ref refid="Common_8h_1a4a42ee0d16198c655ab6bcfb02831c8b" kindref="member">SHRN_STRLEN</ref>(str1);</highlight></codeline>
-<codeline lineno="149"><highlight class="normal"></highlight></codeline>
-<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>len<sp/>=<sp/>len1<sp/>&lt;<sp/>len<sp/>?<sp/>len1<sp/>:<sp/>len;</highlight></codeline>
-<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>len;<sp/>i++)</highlight></codeline>
-<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(str0[i]<sp/>!=<sp/>str1[i])</highlight></codeline>
-<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>str0[i]<sp/>-<sp/>str1[i];</highlight></codeline>
-<codeline lineno="155"><highlight class="normal"></highlight></codeline>
-<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
-<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="158"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="160"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#define<sp/>SHRN_STRCMP(str0,<sp/>str1)<sp/>SUTL_InternalStrcmp(str0,<sp/>str1)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="161"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="162"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="163"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#include<sp/>&lt;string.h&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="164"><highlight class="normal"></highlight></codeline>
-<codeline lineno="165" refid="Common_8h_1ae98701da6883fb9a22e5c13a1bf87cfb" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>SHRN_MEMCPY(dst,<sp/>src,<sp/>size)<sp/>memcpy(dst,<sp/>src,<sp/>size)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="166" refid="Common_8h_1a4ce05443b27a360cf8f168b7d720570a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>SHRN_MEMMOVE(dst,<sp/>src,<sp/>size)<sp/>memmove(dst,<sp/>src,<sp/>size)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="167" refid="Common_8h_1a5c367cdceb0b1a52f2208e78a1f4efa2" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>SHRN_MEMSET(ptr,<sp/>val,<sp/>size)<sp/>memset(ptr,<sp/>val,<sp/>size)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="168" refid="Common_8h_1a4a42ee0d16198c655ab6bcfb02831c8b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>SHRN_STRLEN(str)<sp/>strlen(str)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="169" refid="Common_8h_1a4601d651258a55222c8eceec39bc8199" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>SHRN_STRCMP(str0,<sp/>str1)<sp/>strcmp(str0,<sp/>str1)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="170"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="171"><highlight class="normal"></highlight></codeline>
-<codeline lineno="172"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="ErrorHandler_8h" kindref="compound">ErrorHandler.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len<sp/>=<sp/><ref refid="Common_8h_1a4a42ee0d16198c655ab6bcfb02831c8b" kindref="member">SHRN_STRLEN</ref>(str0);</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len1<sp/>=<sp/><ref refid="Common_8h_1a4a42ee0d16198c655ab6bcfb02831c8b" kindref="member">SHRN_STRLEN</ref>(str1);</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>len<sp/>=<sp/>len1<sp/>&lt;<sp/>len<sp/>?<sp/>len1<sp/>:<sp/>len;</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>len;<sp/>i++)</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(str0[i]<sp/>!=<sp/>str1[i])</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>str0[i]<sp/>-<sp/>str1[i];</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#define<sp/>SHRN_STRCMP(str0,<sp/>str1)<sp/>SUTL_InternalStrcmp(str0,<sp/>str1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#include<sp/>&lt;string.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight></codeline>
+<codeline lineno="167" refid="Common_8h_1ae98701da6883fb9a22e5c13a1bf87cfb" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>SHRN_MEMCPY(dst,<sp/>src,<sp/>size)<sp/><sp/><sp/><sp/><sp/>memcpy(dst,<sp/>src,<sp/>size)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="168" refid="Common_8h_1a4ce05443b27a360cf8f168b7d720570a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>SHRN_MEMMOVE(dst,<sp/>src,<sp/>size)<sp/><sp/><sp/><sp/>memmove(dst,<sp/>src,<sp/>size)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="169" refid="Common_8h_1a5c367cdceb0b1a52f2208e78a1f4efa2" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>SHRN_MEMSET(ptr,<sp/>val,<sp/>size)<sp/><sp/><sp/><sp/><sp/>memset(ptr,<sp/>val,<sp/>size)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="170" refid="Common_8h_1a4a42ee0d16198c655ab6bcfb02831c8b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>SHRN_STRLEN(str)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>strlen(str)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="171" refid="Common_8h_1a4601d651258a55222c8eceec39bc8199" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>SHRN_STRCMP(str0,<sp/>str1)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>strcmp(str0,<sp/>str1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="173"><highlight class="normal"></highlight></codeline>
-<codeline lineno="174"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="ErrorHandler_8h" kindref="compound">ErrorHandler.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
     </programlisting>
     <location file="include/Shroon/Utils/Common.h"/>
   </compounddef>
